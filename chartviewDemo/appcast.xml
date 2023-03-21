@@ -7,14 +7,16 @@
         <language>cn</language>
         <item>
             <title>1.1.0</title>
-            <description><![CDATA[<ul>
-  <li>更新 ChartViewDemo 到 v1.1.0 <a href="https://github.com/Dreamacro/clash/releases/tag/v1.1.0">Core Releate Note</a>，支持 tunnels 功能。</li>
-  <li>适配 macOS 13, 修复进程匹配及 helper 显示问题。</li>
-  <li>新增设置页面（菜单栏-&gt;配置-&gt;更多设置), 支持直接设置代理忽略地址。</li>
-  <li>修复 macOS 13 下 proxy daemon 安装问题。</li>
-  <li>最低系统要求提升至 macOS 10.14。</li>
-</ul>
-]]></description>
+            <description>
+                <![CDATA[<ul>
+                    <li>更新 ChartViewDemo 到 v1.1.0 <a href="https://github.com/Dreamacro/clash/releases/tag/v1.1.0">Core Releate Note</a>，支持 tunnels 功能。</li>
+                    <li>适配 macOS 13, 修复进程匹配及 helper 显示问题。</li>
+                    <li>新增设置页面（菜单栏-&gt;配置-&gt;更多设置), 支持直接设置代理忽略地址。</li>
+                    <li>修复 macOS 13 下 proxy daemon 安装问题。</li>
+                    <li>最低系统要求提升至 macOS 10.14。</li>
+                    </ul>
+                ]]>
+            </description>
             <pubDate>Thu, 20 Mar 2023 00:35:00 +0000</pubDate>
             <enclosure
                 url="https://github.com/liyu158163/ChartViewDemo/releases/download/v1.0.0/ChartViewDemo.dmg"
