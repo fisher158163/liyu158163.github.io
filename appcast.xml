@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
+	<channel>
+		<title>ClashX ChangeLog</title>
+		<link>https://github.com/yichengchen/clashX</link>
+		<description>Most recent changes with links to updates.</description>
+		<language>cn</language>
+		<item>
+			<title>1.96.2</title>
+			<description><![CDATA[<ul>
+  <li>更新 Clash Core 到 v1.12.0 <a href="https://github.com/Dreamacro/clash/releases/tag/v1.12.0">Core Releate Note</a>，支持 tunnels 功能。</li>
+  <li>适配 macOS 13, 修复进程匹配及 helper 显示问题。</li>
+  <li>新增设置页面（菜单栏-&gt;配置-&gt;更多设置), 支持直接设置代理忽略地址。</li>
+  <li>修复 macOS 13 下 proxy daemon 安装问题。</li>
+  <li>最低系统要求提升至 macOS 10.14。</li>
+</ul>
+]]></description>
+			<pubDate>Mon, 28 Nov 2022 11:49:11 +0000</pubDate>
+			<enclosure
+				url="https://github.com/liyu158163/ChartViewDemo/releases/download/v1.0.0/ChartViewDemo.dmg"
+				sparkle:version="1.96.2"
+				type="application/octet-stream"
+			/>
+		</item><item>
+			<title>1.95.1</title>
+			<description><![CDATA[<ul>
+  <li>升级Clash Core到 v1.11.8 [Release Note](https://github.com/Dreamacro/clash/releases/tag/v1.11.8</li>
+  <li>最后一个支持 macOS 10.12/10.13 的版本（已知在旧系统中可能出现dashboard白屏/崩溃等情况）</li>
+</ul>
+]]></description>
+			<pubDate>Sun, 04 Sep 2022 11:36:22 +0000</pubDate>
+			<enclosure
+				url="https://github.com/yichengchen/clashX/releases/download/1.95.1/ClashX.dmg"
+				sparkle:version="1.95.1"
+				type="application/octet-stream"
+			/>
+		</item><item>
+			<title>1.94.0</title>
+			<description><![CDATA[<ul>
+  <li>update clash core to v1.11.0 see <a href="https://github.com/Dreamacro/clash/releases/tag/v1.11.0">Release Note</a> for details.</li>
+  <li>Fix potential issue causing crash.</li>
+  <li>Reduce alerts when notification permission not enabled.</li>
+</ul>
+]]></description>
+			<pubDate>Wed, 22 Jun 2022 13:26:29 +0000</pubDate>
+			<enclosure
+				url="https://github.com/yichengchen/clashX/releases/download/1.94.0/ClashX.dmg"
+				sparkle:version="1.94.0"
+				type="application/octet-stream"
+			/>
+		</item><item>
+			<title>1.91.1</title>
+			<description><![CDATA[<ul>
+  <li>升级 Clash Core 到 1.10, 支持snell v3, PROCESS-PATH规则，查看<a href="https://github.com/Dreamacro/clash/releases/tag/v1.10.0">Clash Release Note</a> 获取详细信息。</li>
+  <li>支持使用 AppleScript 切换代理模式 (#827) @vince-hz</li>
+  <li>修复开机启动选项在某些状态不生效的问题</li>
+  <li>修复10.13系统支持</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Apple Script 使用方法
+tell application "ClashX" to toggleProxy // 切换代理开关
+tell application "ClashX" to proxyMode "direct" // 切换代理模式
+tell application "ClashX" to proxyMode "global"
+tell application "ClashX" to proxyMode "rule"
+</code></pre></div></div>
+
+<p>ClashX Pro 集成premium core，提供增强模式(tun)，rule set等特性支持，下载地址： <a href="https://install.appcenter.ms/users/clashx/apps/clashx-pro/distribution_groups/public">Appcenter</a></p>
+]]></description>
+			<pubDate>Tue, 22 Mar 2022 12:45:38 +0000</pubDate>
+			<enclosure
+				url="https://github.com/yichengchen/clashX/releases/download/1.91.1/ClashX.dmg"
+				sparkle:version="1.91.1"
+				type="application/octet-stream"
+			/>
+		</item><item>
+			<title>1.90.0</title>
+			<description><![CDATA[<ul>
+  <li>更新到最新的Clash core.</li>
+  <li>
+    <p>修复增强模式在网线、wifi环境切换造成的网络连接失败问题</p>
+  </li>
+  <li>
+    <p>Clash Core更新日志 <a href="https://github.com/Dreamacro/clash/releases/tag/v1.9.0">Github</a></p>
+  </li>
+  <li>注意vmess下的 ws-headers 和 ws-path 选项已更新，请更新完配置文件<a href="https://github.com/Dreamacro/clash/wiki/configuration">Github wiki</a> 后再更新ClashX</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  - name: "vmess"
+    type: vmess
+    server: server
+    port: 443
+    uuid: uuid
+    alterId: 32
+    cipher: auto
+    # udp: true
+    # tls: true
+    # skip-cert-verify: true
+    # servername: example.com # priority over wss host
+    # network: ws
+    # ws-opts:
+    #   path: /path
+    #   headers:
+    #     Host: v2ray.com
+    #   max-early-data: 2048
+    #   early-data-header-name: Sec-WebSocket-Protocol
+</code></pre></div></div>
+]]></description>
+			<pubDate>Sat, 08 Jan 2022 07:40:04 +0000</pubDate>
+			<enclosure
+				url="https://github.com/yichengchen/clashX/releases/download/1.90.0/ClashX.dmg"
+				sparkle:version="1.90.0"
+				type="application/octet-stream"
+			/>
+		</item><item>
+			<title>1.72.0</title>
+			<description><![CDATA[<ul>
+  <li>更新 Clash Core 到 1.8.0 查看 <a href="https://github.com/Dreamacro/clash/releases/tag/v1.8.0">Core Release Note</a> 获取详细信息
+    <ul>
+      <li>support trojan over websocket</li>
+      <li>all proxies support dial different NIC</li>
+      <li>…</li>
+    </ul>
+  </li>
+  <li>无通知权限时不显示代理被其他软件覆写时的弹窗</li>
+</ul>
+]]></description>
+			<pubDate>Sat, 13 Nov 2021 13:26:55 +0000</pubDate>
+			<enclosure
+				url="https://github.com/yichengchen/clashX/releases/download/1.72.0/ClashX.dmg"
+				sparkle:version="1.72.0"
+				type="application/octet-stream"
+			/>
+		</item><item>
+			<title>1.71.0</title>
+			<description><![CDATA[<ul>
+  <li>设置代理时增加不包括简单主机名选项。需要更新ProxyHelper</li>
+  <li>支持自定义托管文件更新间隔</li>
+  <li>修复ClashX 未启动时 url scheme 无效的bug</li>
+  <li>配置文件错误提示将使用 alert 提示</li>
+  <li>更新Clash Core 到 1.7.1</li>
+</ul>
+]]></description>
+			<pubDate>Mon, 04 Oct 2021 09:53:58 +0000</pubDate>
+			<enclosure
+				url="https://github.com/yichengchen/clashX/releases/download/1.71.0/ClashX.dmg"
+				sparkle:version="1.71.0"
+				type="application/octet-stream"
+			/>
+		</item><item>
+			<title>1.70.0</title>
+			<description><![CDATA[<ul>
+  <li>Update Clash core to 1.7.0. See <a href="https://github.com/Dreamacro/clash/releases/tag/v1.7.0">Clash Core Release Note</a> for details.</li>
+  <li>Try fixing the proxy setting issue after reboot.</li>
+  <li>only health check auto group used provider after network work changed.</li>
+  <li>Bugfixes</li>
+</ul>
+]]></description>
+			<pubDate>Sun, 12 Sep 2021 13:47:07 +0000</pubDate>
+			<enclosure
+				url="https://github.com/yichengchen/clashX/releases/download/1.70.0/ClashX.dmg"
+				sparkle:version="1.70.0"
+				type="application/octet-stream"
+			/>
+		</item><item>
+			<title>1.65.1</title>
+			<description><![CDATA[<ul>
+  <li>Update Clash Core</li>
+  <li>Fix health check bug</li>
+  <li>Open config file will directly open iCloud folder if using the iCloud config file</li>
+</ul>
+]]></description>
+			<pubDate>Sun, 08 Aug 2021 13:23:32 +0000</pubDate>
+			<enclosure
+				url="https://github.com/yichengchen/clashX/releases/download/1.65.1/ClashX.dmg"
+				sparkle:version="1.65.1"
+				type="application/octet-stream"
+			/>
+		</item><item>
+			<title>1.65.0</title>
+			<description><![CDATA[<ul>
+  <li>Upgrade clash core:
+    <ul>
+      <li>fix vmess+wss connection issue.</li>
+      <li>fix vmess http should use Host header on request</li>
+    </ul>
+  </li>
+</ul>
+]]></description>
+			<pubDate>Sun, 04 Jul 2021 07:48:44 +0000</pubDate>
+			<enclosure
+				url="https://github.com/yichengchen/clashX/releases/download/1.65.0/ClashX.dmg"
+				sparkle:version="1.65.0"
+				type="application/octet-stream"
+			/>
+		</item><item>
+			<title>1.60.0</title>
+			<description><![CDATA[<ul>
+  <li>Upgrade Clash core, check https://github.com/Dreamacro/clash/releases/tag/v1.6.0 for details</li>
+  <li>Remove Crashlytics which causing crashes.</li>
+</ul>
+]]></description>
+			<pubDate>Tue, 15 Jun 2021 13:30:12 +0000</pubDate>
+			<enclosure
+				url="https://github.com/yichengchen/clashX/releases/download/1.60.0/ClashX.dmg"
+				sparkle:version="1.60.0"
+				type="application/octet-stream"
+			/>
+		</item><item>
+			<title>1.50.1</title>
+			<description><![CDATA[<ul>
+  <li>Update Core to fix grpc related proxy issue</li>
+  <li>Fix app icon not clear</li>
+</ul>
+
+]]></description>
+			<pubDate>Sun, 18 Apr 2021 04:52:19 +0000</pubDate>
+			<enclosure
+				url="https://github.com/yichengchen/clashX/releases/download/1.50.1/ClashX.dmg"
+				sparkle:version="1.50.1"
+				type="application/octet-stream"
+			/>
+		</item><item>
+			<title>1.50.0</title>
+			<description><![CDATA[<ul>
+  <li>Upgrade Clash Core to 1.5.0. View <a href="https://github.com/Dreamacro/clash/releases/tag/v1.5.0">Clash Release Note</a> for details</li>
+</ul>
+]]></description>
+			<pubDate>Sun, 11 Apr 2021 03:36:27 +0000</pubDate>
+			<enclosure
+				url="https://github.com/yichengchen/clashX/releases/download/1.50.0/ClashX.dmg"
+				sparkle:version="1.50.0"
+				type="application/octet-stream"
+			/>
+		</item><item>
+			<title>1.40.0</title>
+			<description><![CDATA[<ul>
+  <li>Update Clash Core to 1.4.0,  improve the stability of ssr, officially support Apple Silicon and bugfixs. Read <a href="https://github.com/Dreamacro/clash/releases/tag/v1.4.0">release note</a> for more details</li>
+</ul>
+]]></description>
+			<pubDate>Sat, 20 Feb 2021 14:06:56 +0000</pubDate>
+			<enclosure
+				url="https://github.com/yichengchen/clashX/releases/download/1.40.0/ClashX.dmg"
+				sparkle:version="1.40.0"
+				type="application/octet-stream"
+			/>
+		</item><item>
+			<title>1.31.2</title>
+			<description><![CDATA[<ul>
+  <li>Fix update GEOIP database fail in experiment setting.</li>
+  <li>Fix some bugs and crashes.</li>
+</ul>
+]]></description>
+			<pubDate>Sat, 19 Dec 2020 11:30:25 +0000</pubDate>
+			<enclosure
+				url="https://github.com/yichengchen/clashX/releases/download/1.31.2/ClashX.dmg"
+				sparkle:version="1.31.2"
+				type="application/octet-stream"
+			/>
+		</item><item>
+			<title>1.31.1</title>
+			<description><![CDATA[<ul>
+  <li>Update to latest clash core and bring follow updates:
+    <ul>
+      <li>add <code class="language-plaintext highlighter-rouge">lazy</code> for proxy group and provider</li>
+      <li>more detailed error when dial failed</li>
+      <li>add <code class="language-plaintext highlighter-rouge">disable-udp</code> option for all proxy group</li>
+    </ul>
+  </li>
+  <li>Fix issue causing port open fail at launch.</li>
+  <li>Fix clashX can not quit successfully at some case.</li>
+</ul>
+
+<p>————————————
+Download <strong><em>ClashX Pro</em></strong> With <strong><em>enhanced mode</em></strong> and <strong><em>Apple Silicon</em></strong>  support for free permanently at <a href="https://install.appcenter.ms/users/clashx/apps/clashx-pro/distribution_groups/public">AppCenter</a>.
+The Apple Silicon support for ClashX will be add once go 1.16 released</p>
+]]></description>
+			<pubDate>Sun, 06 Dec 2020 09:41:22 +0000</pubDate>
+			<enclosure
+				url="https://github.com/yichengchen/clashX/releases/download/1.31.1/ClashX.dmg"
+				sparkle:version="1.31.1"
+				type="application/octet-stream"
+			/>
+		</item><item>
+			<title>1.31.0</title>
+			<description><![CDATA[<ul>
+  <li>adapt the new look of macOS 11</li>
+  <li>update clash core</li>
+</ul>
+
+]]></description>
+			<pubDate>Sat, 14 Nov 2020 07:38:41 +0000</pubDate>
+			<enclosure
+				url="https://github.com/yichengchen/clashX/releases/download/1.31.0/ClashX.dmg"
+				sparkle:version="1.31.0"
+				type="application/octet-stream"
+			/>
+		</item><item>
+			<title>1.30.4</title>
+			<description><![CDATA[<ul>
+  <li>update core</li>
+  <li>built with macOS 11 sdk</li>
+</ul>
+]]></description>
+			<pubDate>Thu, 12 Nov 2020 11:49:12 +0000</pubDate>
+			<enclosure
+				url="https://github.com/yichengchen/clashX/releases/download/1.30.4/ClashX.dmg"
+				sparkle:version="1.30.4"
+				type="application/octet-stream"
+			/>
+		</item><item>
+			<title>1.30.3</title>
+			<description><![CDATA[<ul>
+  <li>更新Clash Core</li>
+  <li>优化退出流程</li>
+</ul>
+]]></description>
+			<pubDate>Fri, 06 Nov 2020 09:45:48 +0000</pubDate>
+			<enclosure
+				url="https://github.com/yichengchen/clashX/releases/download/1.30.3/ClashX.dmg"
+				sparkle:version="1.30.3"
+				type="application/octet-stream"
+			/>
+		</item><item>
+			<title>1.30.2</title>
+			<description><![CDATA[<ul>
+  <li>Update core</li>
+  <li>Bugfixs</li>
+</ul>
+
+<p>注意: 由于ClashCore 1.0的发布 ClashX 1.30.x的版本包括不向前兼容的更新。如果您的配置文件尚未兼容新的配置文件格式，请谨慎更新。</p>
+
+<p>查看详细内容：https://github.com/Dreamacro/clash/wiki/breaking-changes-in-1.0.0</p>
+]]></description>
+			<pubDate>Sun, 06 Sep 2020 02:57:51 +0000</pubDate>
+			<enclosure
+				url="https://github.com/yichengchen/clashX/releases/download/1.30.2/ClashX.dmg"
+				sparkle:version="1.30.2"
+				type="application/octet-stream"
+			/>
+		</item><item>
+			<title>1.20.4</title>
+			<description><![CDATA[<ul>
+  <li>Update core to latest dev, go to <a href="https://github.com/Dreamacro/clash/commits/dev">commits</a> for more details.</li>
+  <li>If you want to experience the tun feature (enhanced mode) and rule set feature, you can download the <a href="https://install.appcenter.ms/users/clashx/apps/clashx-pro/distribution_groups/public">ClashX Pro at AppCenter</a> for free.</li>
+</ul>
+]]></description>
+			<pubDate>Fri, 12 Jun 2020 14:18:41 +0000</pubDate>
+			<enclosure
+				url="https://github.com/yichengchen/clashX/releases/download/1.20.4/ClashX.dmg"
+				sparkle:version="1.20.4"
+				type="application/octet-stream"
+			/>
+		</item><item>
+			<title>1.20.3</title>
+			<description><![CDATA[<ul>
+  <li>Update core to latest dev, go to <a href="https://github.com/Dreamacro/clash/commits/dev">commits</a> for more details.</li>
+  <li>Experimental iCloud support, enable at experimental config menu.</li>
+  <li>If you want to experience the tun feature (enhanced mode), you can download the <a href="https://install.appcenter.ms/users/clashx/apps/clashx-pro/distribution_groups/public">ClashX Pro at AppCenter</a> for free.</li>
+</ul>
+]]></description>
+			<pubDate>Sat, 06 Jun 2020 06:00:58 +0000</pubDate>
+			<enclosure
+				url="https://github.com/yichengchen/clashX/releases/download/1.20.3/ClashX.dmg"
+				sparkle:version="1.20.3"
+				type="application/octet-stream"
+			/>
+		</item><item>
+			<title>1.20.1</title>
+			<description><![CDATA[<ul>
+  <li>Try fix “open port fail” error.</li>
+</ul>
+]]></description>
+			<pubDate>Sun, 17 May 2020 12:31:45 +0000</pubDate>
+			<enclosure
+				url="https://github.com/yichengchen/clashX/releases/download/1.20.1/ClashX.dmg"
+				sparkle:version="1.20.1"
+				type="application/octet-stream"
+			/>
+		</item><item>
+			<title>1.20.0</title>
+			<description><![CDATA[<ul>
+  <li>Update clash core to v0.20.0, visit <a href="https://github.com/Dreamacro/clash/releases/tag/v0.20.0">Release Note</a> for details.</li>
+  <li>Try fix port open fail at launch.</li>
+  <li>Default enable <code class="language-plaintext highlighter-rouge">Enhance proxy list render</code> at macOS above 10.15.2 and provide colorful proxy latency display. If this  encounter problems, please go to experimental setting and disable it.</li>
+</ul>
+
+]]></description>
+			<pubDate>Sun, 10 May 2020 04:36:35 +0000</pubDate>
+			<enclosure
+				url="https://github.com/yichengchen/clashX/releases/download/1.20.0/ClashX.dmg"
+				sparkle:version="1.20.0"
+				type="application/octet-stream"
+			/>
+		</item><item>
+			<title>1.19.2</title>
+			<description><![CDATA[<ul>
+  <li>Update helper tool install flow and fix bugs.</li>
+  <li>Fix redundant health check &amp; remove set proxy support for l2tp.</li>
+  <li>Update core.</li>
+  <li>Bugfixs.</li>
+</ul>
+]]></description>
+			<pubDate>Fri, 24 Apr 2020 13:22:16 +0000</pubDate>
+			<enclosure
+				url="https://github.com/yichengchen/clashX/releases/download/1.19.2/ClashX.dmg"
+				sparkle:version="1.19.2"
+				type="application/octet-stream"
+			/>
+		</item>
+	</channel>
+</rss>
+
