@@ -1,8 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
     <channel>
-        <title>ChartViewDemo ChangeLog</title>
-        <link>https://github.com/yichengchen/clashX</link>
+        <title>ChartViewDemo</title>
         <description>Most recent changes with links to updates.</description>
         <language>cn</language>
         <item>
@@ -17,13 +16,11 @@
                     </ul>
                 ]]>
             </description>
-            <pubDate>Thu, 21 Mar 2023 12:35:00 +0000</pubDate>
-            <enclosure
-                url="https://github.com/liyu158163/SparkleTest/releases/download/v1.1.0/ChartViewDemo.zip"
-                sparkle:version="2"
-                sparkle:shortVersionString="1.1.0" length="6069030" type="application/octet-stream" sparkle:edSignature="6ckckwkCGcOD/p90RzVZoklJO858xKoe1A4KB4o1IZe0jc17Dg49JBTFu2v6nLedp7Ay5okItUzUh3fRptKuDQ=="/>
+            <pubDate>Wed, 22 Mar 2023 13:17:10 +0800</pubDate>
+            <sparkle:version>102</sparkle:version>
+            <sparkle:shortVersionString>1.1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/liyu158163/SparkleTest/releases/download/v1.1.0/ChartViewDemo.zip" length="6069030" type="application/octet-stream" sparkle:edSignature="6ckckwkCGcOD/p90RzVZoklJO858xKoe1A4KB4o1IZe0jc17Dg49JBTFu2v6nLedp7Ay5okItUzUh3fRptKuDQ=="/>
         </item>
     </channel>
 </rss>
-
-
