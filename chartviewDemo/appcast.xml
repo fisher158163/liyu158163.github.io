@@ -17,9 +17,9 @@
                     </ul>
                 ]]>
             </description>
-            <pubDate>Thu, 20 Mar 2023 00:35:00 +0000</pubDate>
+            <pubDate>Thu, 21 Mar 2023 12:35:00 +0000</pubDate>
             <enclosure
-                url="https://github.com/liyu158163/ChartViewDemo/releases/download/v1.0.0/ChartViewDemo.dmg"
+                url="https://github.com/liyu158163/SparkleTest/releases/download/v1.0.0/ChartViewDemo.zip"
                 sparkle:version="2.4.0"
                 type="application/octet-stream"
             />
