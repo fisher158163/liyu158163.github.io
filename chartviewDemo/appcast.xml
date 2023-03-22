@@ -20,9 +20,8 @@
             <pubDate>Thu, 21 Mar 2023 12:35:00 +0000</pubDate>
             <enclosure
                 url="https://github.com/liyu158163/SparkleTest/releases/download/v1.1.0/ChartViewDemo.zip"
-                sparkle:version="2.4.0"
-                type="application/octet-stream"
-            />
+                sparkle:version="2"
+                sparkle:shortVersionString="1.1.0" length="6069030" type="application/octet-stream" sparkle:edSignature="6ckckwkCGcOD/p90RzVZoklJO858xKoe1A4KB4o1IZe0jc17Dg49JBTFu2v6nLedp7Ay5okItUzUh3fRptKuDQ=="/>
         </item>
     </channel>
 </rss>
